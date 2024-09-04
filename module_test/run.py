@@ -12,7 +12,7 @@ def run(inputs: InputSchema, worker_nodes = None, orchestrator_node = None, flow
     logger.info(f"cfg: {cfg}")
 
     prompt = inputs.prompt
-    modified_prompt = f"{prompt} + first version"
+    modified_prompt = f"{prompt} + second version"
 
     return modified_prompt
 
