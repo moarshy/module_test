@@ -18,5 +18,7 @@ def run(inputs: InputSchema, worker_nodes = None, orchestrator_node = None, flow
 
 
 if __name__ == "__main__":
+    import module_test
+    print(module_test.__version__)
     run(InputSchema(prompt="Hello, world!"))
 
