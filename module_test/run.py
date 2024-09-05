@@ -14,7 +14,7 @@ def run(inputs: InputSchema, worker_nodes = None, orchestrator_node = None, flow
     prompt = inputs.prompt
     modified_prompt = f"{prompt} + second version"
 
-    return modified_prompt
+    return inputs
 
 
 if __name__ == "__main__":
