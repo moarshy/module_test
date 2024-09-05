@@ -2,6 +2,7 @@
 
 from module_test.schemas import InputSchema
 from module_test.utils import get_logger
+from datetime import datetime
 
 
 logger = get_logger(__name__)
@@ -14,7 +15,8 @@ def run(inputs: InputSchema, worker_nodes = None, orchestrator_node = None, flow
     prompt = inputs.prompt
     modified_prompt = f"{prompt} + second version"
 
-    return inputs
+    # return non dict, list, tuple, set, BaseModel response
+    return datetime.now()
 
 
 if __name__ == "__main__":
