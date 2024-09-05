@@ -15,9 +15,16 @@ def run(inputs: InputSchema, worker_nodes = None, orchestrator_node = None, flow
     prompt = inputs.prompt
     modified_prompt = f"{prompt} + second version"
 
-    # return non dict, list, tuple, set, BaseModel response
-    return datetime.now()
+    # v0.1 --> first version
+    # v0.2 --> second version
+    # v0.4 --> returns BaseModel
+    # v0.5 --> returns datetime.now()
+    # v0.6 --> errors internally
 
+    if prompt:
+        raise ValueError("Error for fun")
+    
+    return modified_prompt
 
 if __name__ == "__main__":
     import module_test
