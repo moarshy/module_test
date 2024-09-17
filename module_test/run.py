@@ -20,6 +20,7 @@ async def run(inputs: InputSchema, worker_nodes = None, orchestrator_node = None
     # v0.4 --> returns BaseModel
     # v0.5 --> returns datetime.now()
     # v0.6 --> errors internally
+    # v0.7 --> async
 
     if prompt:
         raise ValueError("Error for fun")
